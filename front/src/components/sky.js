@@ -7,7 +7,6 @@ export default function Sky() {
     fetch("http://localhost:5555/")
       .then(res => res.json())
       .then(response => {
-        console.log(response.matrix.dayOne)
         setClouds(response.matrix);
       })
       .catch(error => console.log(error));
