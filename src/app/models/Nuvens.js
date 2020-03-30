@@ -41,7 +41,7 @@ class Nuvens {
       }
 
       // verifica se o proximo item é N
-      if ((index === 1 || index + 1 % this.landArea !== 0) && matrix[index + 1] === 'N') {
+      if ((index === 1 || (index + 1) % this.landArea !== 0) && matrix[index + 1] === 'N') {
         return 'N'
       }
 
