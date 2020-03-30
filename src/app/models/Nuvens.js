@@ -53,19 +53,6 @@ class Nuvens {
       dayOne: matrix,
       dayTwo: newMatrix
     }
-
-
-    // for (let index = 0; index < matrix.length; index++) {
-
-    //   if (matrix[index] === 'N') {
-    //     newMatrix.push('N')
-    //     newMatrix.push('N')
-    //     index++
-    //   } else {
-    //     newMatrix.push(matrix[index])
-    //   }
-    // }
-
   }
 }
 
