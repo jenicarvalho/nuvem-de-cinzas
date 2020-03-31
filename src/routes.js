@@ -1,11 +1,7 @@
 import { Router } from 'express'
-import Nuvens from './app/models/Nuvens'
+import { matrix } from './app/controllers/NuvensController'
 
 const routes = new Router()
-
-const objetoNuvens = new Nuvens(10)
-
-const matrix = objetoNuvens.matrix
 
 routes.get('/', (req, res) => {
   return res.json({ matrix })
