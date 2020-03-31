@@ -15,16 +15,16 @@ export default function Sky() {
   return (
     <>
       <div className="grid">
-        {clouds.dayOne.map(cloud => (
-          <div>
+        {clouds.dayOne.map((cloud, index) => (
+          <div key={index}>
             <span>{cloud}</span>
           </div>
         ))}
       </div>
 
       <div className="grid">
-        {clouds.dayTwo.map(cloud => (
-          <div>
+        {clouds.dayTwo.map((cloud, index) => (
+          <div key={index}>
             <span>{cloud}</span>
           </div>
         ))}
