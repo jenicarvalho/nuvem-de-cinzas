@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Sky() {
-  const [clouds, setClouds] = useState({ dayOne: [], dayTwo: [] });
+  const [clouds, setClouds] = useState({ dayOne: [], dayTwo: [], dayThree: [] });
 
   useEffect(() => {
     fetch("http://localhost:5555/")
@@ -24,6 +24,14 @@ export default function Sky() {
 
       <div className="grid">
         {clouds.dayTwo.map((cloud, index) => (
+          <div key={index}>
+            <span>{cloud}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="grid">
+        {clouds.dayThree.map((cloud, index) => (
           <div key={index}>
             <span>{cloud}</span>
           </div>
