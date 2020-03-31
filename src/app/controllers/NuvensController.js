@@ -1,7 +1,5 @@
 import Nuvens from '../models/Nuvens'
 
-const NuvensController = new Nuvens()
+const objetoNuvens = new Nuvens(10)
 
-console.log(NuvensController.mountMatrix())
-
-export default NuvensController
+export const matrix = objetoNuvens.matrix
